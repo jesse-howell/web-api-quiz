@@ -1,26 +1,38 @@
 // initializers
+// updated initializer names
 var button = document.querySelector("button"); 
 var container = document.querySelector("container");
-var start = document.querySelector("start");
-var quiz = document.querySelector("quiz");
+var startEl = document.querySelector("start");
+var quizEl = document.querySelector("quiz");
 var timerEl = localStorage.querySelector(".timer");
 var mainEl = document.querySelector("main");
 var counter = local.Storage.getItem("counter");
-var submit = localStorage.getItem("submit")
+var submitEl = localStorage.getItem("submit")
 
 // if statements
+function startQuiz("click" , startButton) {
+    if (startButton == click);
+    event.
 
+    }
+}
+    
+    
+
+ 
 
 // functions
 // added event listeners
-startButton.addEventListener("click" | null, function() {
+startButton.addEventListener("click" , function(event) {
+    event.preventDefault();
+    
+}
+    
+,quizButton.addEventListener("click" | null, function() {
 
 }
-quiz.Button.addEventListener("click" | null, function() {
-
-}
-submit.button.addEventListener("click" | null, function(){
+,submitButton.addEventListener("click" | null, function(){
 
 }
 
-init()
+,init()
