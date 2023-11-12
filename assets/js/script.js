@@ -1,38 +1,43 @@
 // initializers
 // updated initializer names
-var button = document.querySelector("button"); 
-var container = document.querySelector("container");
-var startEl = document.querySelector("start");
+// removed some initializers
+var startEl = document.querySelector('.start');
 var quizEl = document.querySelector("quiz");
-var timerEl = localStorage.querySelector(".timer");
 var mainEl = document.querySelector("main");
-var counter = local.Storage.getItem("counter");
-var submitEl = localStorage.getItem("submit")
 
 // if statements
-function startQuiz("click" , startButton) {
-    if (startButton == click);
-    event.
+// added functions
+function showStart() {
+    startEl.style.display = null;
+    quizEl.style.display = none;
+    submitEl.style.display = none;
 
-    }
 }
+
+function showQuiz() {
+    startEl.style.display = none;
+    quizEl.style.display = null;
+    submitEl.style.display = none;
+    
+}
+
+function showSubmit() {
+    startEl.style.display = none;
+    quizEl.style.display = none;
+    submitEl.style.display = null;
+    
+}
+
     
     
 
  
 
-// functions
-// added event listeners
-startButton.addEventListener("click" , function(event) {
-    event.preventDefault();
-    
-}
-    
-,quizButton.addEventListener("click" | null, function() {
+// removed eventlisteners
 
-}
-,submitButton.addEventListener("click" | null, function(){
+function init() {
+showStart();
 
 }
 
-,init()
+init()
