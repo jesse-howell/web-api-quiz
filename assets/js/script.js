@@ -1,30 +1,32 @@
 // initializers
 // updated initializer names
 // removed some initializers
-var startEl = document.querySelector('.start');
-var quizEl = document.querySelector("quiz");
-var mainEl = document.querySelector("main");
+// changed initializer names
+var startPage = document.querySelector('.start');
+var quizPage = document.querySelector('.quiz');
+var scorePage = document.querySelector('.score');
 
 // if statements
 // added functions
+// fixed broken functions
 function showStart() {
-    startEl.style.display = null;
-    quizEl.style.display = none;
-    submitEl.style.display = none;
+    startPage.style.display = null;
+    quizPage.style.display = "none";
+    scorePage.style.display = "none";
 
 }
 
 function showQuiz() {
-    startEl.style.display = none;
-    quizEl.style.display = null;
-    submitEl.style.display = none;
+    startPage.style.display = "none";
+    quizPage.style.display = null;
+    scorePage.style.display = "none";
     
 }
 
-function showSubmit() {
-    startEl.style.display = none;
-    quizEl.style.display = none;
-    submitEl.style.display = null;
+function showScore() {
+    startPage.style.display = "none";
+    quizPage.style.display = "none";
+    scorePage.style.display = null;
     
 }
 
@@ -36,8 +38,7 @@ function showSubmit() {
 // removed eventlisteners
 
 function init() {
-showStart();
 
 }
 
-init()
+init();
