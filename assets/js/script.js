@@ -6,7 +6,7 @@
 var startPage = document.querySelector('.start');
 var quizPage = document.querySelector('.quiz');
 var scorePage = document.querySelector('.score');
-var startButton = document.querySelector("#startbtn");
+var startButton = document.querySelector("#start_btn");
 var quizButton = document.querySelector("quiz");
 
 // if statements
