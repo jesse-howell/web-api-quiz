@@ -3,7 +3,7 @@
 // removed some initializers
 // changed initializer names
 // added startButton and quizButton var
-// removed quizButton var, added answerButton and submitButton vars"
+// removed quizButton var, added answerButton and submitButton vars
 var startPage = document.querySelector('.start');
 var quizPage = document.querySelector('.quiz');
 var scorePage = document.querySelector('.score');
@@ -25,7 +25,7 @@ function showQuiz() {
     startPage.style.display = "none";
     quizPage.style.display = null;
     scorePage.style.display = "none";
-    
+ 
 }
 
 function showScore() {
@@ -35,15 +35,14 @@ function showScore() {
     
 }
 // added startButton eventlistener
+// added answer and submit EventListeners
 startButton.addEventListener("click", showQuiz); 
+answerButton.addEventListener("click" , showScore);
+submitButton.addEventListener("click" , showStart);
 
 
 
 
-
-// quizButton.addEventListener("click" , function(event) {
-//     showScore();
-// });
 function init() {
 showStart();
 }
