@@ -3,11 +3,13 @@
 // removed some initializers
 // changed initializer names
 // added startButton and quizButton var
+// removed quizButton var, added answerButton and submitButton vars"
 var startPage = document.querySelector('.start');
 var quizPage = document.querySelector('.quiz');
 var scorePage = document.querySelector('.score');
 var startButton = document.querySelector("#start_btn");
-var quizButton = document.querySelector("quiz");
+var answerButton = document.querySelector("#correct");
+var submitButton = document.querySelector("#submit");
 
 // if statements
 // added functions
