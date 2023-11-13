@@ -43,7 +43,7 @@ startButton.addEventListener("click", showQuiz);
 //     showScore();
 // });
 function init() {
-    showStart();
+showStart();
 }
 
 init();
