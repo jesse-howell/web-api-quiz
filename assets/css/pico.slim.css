@@ -866,12 +866,13 @@ button,
 
 button {
   display: block;
-  width: 100%;
+  width: fit-content;
   margin-bottom: var(--spacing);
 }
 
 [role=button] {
   display: inline-block;
+  align-items: center;
   text-decoration: none;
 }
 

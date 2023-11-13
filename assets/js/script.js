@@ -13,7 +13,7 @@ var secondQuestion = document.querySelector("#correct");
 var thirdQuestion = document.querySelector("#correct");
 var fourthQuestion = document.querySelector("#correct")
 var startButton = document.querySelector("#start_btn");
-var answerButton = document.querySelector("#correct");
+// var answerButton = document.querySelector("#correct");
 var submitButton = document.querySelector("#submit");
 
 // if statements
@@ -82,7 +82,7 @@ function showScore() {
 }
 // added startButton eventlistener
 // added answer and submit EventListeners
-startButton.addEventListener("click" , showQuiz); 
+startButton.addEventListener("click" , "clicked" , showQuiz); 
 // firstQuestion.addEventListener("click" , function(event) {
 //     var correctAnswer = "C. Application Programming Interface";
 //     event.correctAnswer.addEventListener(event , correctAnswer);
