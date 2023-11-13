@@ -1,4 +1,9 @@
 body {
     text-align: center;
 }
-
+/* added button style */
+button {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

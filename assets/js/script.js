@@ -82,11 +82,7 @@ function showScore() {
 }
 // added startButton eventlistener
 // added answer and submit EventListeners
-startButton.addEventListener("click" , "clicked" , showQuiz); 
-// firstQuestion.addEventListener("click" , function(event) {
-//     var correctAnswer = "C. Application Programming Interface";
-//     event.correctAnswer.addEventListener(event , correctAnswer);
-// });
+startButton.addEventListener("click" , showQuiz); 
 
 submitButton.addEventListener("click" , showStart);
 

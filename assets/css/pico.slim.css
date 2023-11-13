@@ -863,10 +863,10 @@ button,
 [type=submit] {
   -webkit-appearance: button;
 }
-
+/* changed button width to 45% */
 button {
   display: block;
-  width: fit-content;
+  width: 45%;
   margin-bottom: var(--spacing);
 }
 
