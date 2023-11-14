@@ -57,48 +57,6 @@ function showQuiz() {
      }
     })
 }
-// added showQuestion functions
-// function showfirstQuestion() {
-//     startPage.style.display = "none";
-//     quizPage.style.display = "none";
-//     scorePage.style.display = "none";
-//     firstQuestion.style.display = null;
-//     secondQuestion.style.display = "none";
-//     thirdQuestion.style.display = "none";
-//     fourthQuestion.style.display = "none";
-    
-// }
-
-// function showsecondQuestion() {
-//     startPage.style.display = "none";
-//     quizPage.style.display = "none";
-//     scorePage.style.display = "none";
-//     firstQuestion.style.display = "none";
-//     secondQuestion.style.display = null;
-//     thirdQuestion.style.display = "none";
-//     fourthQuestion.style.display = "none";
-// }
-
-// function showthirdQuestion() {
-//     startPage.style.display = "none";
-//     quizPage.style.display = "none";
-//     scorePage.style.display = "none";
-//     firstQuestion.style.display = "none";
-//     secondQuestion.style.display = "none";
-//     thirdQuestion.style.display = null;
-//     fourthQuestion.style.display = "none";
-// }
-
-// function showfourthQuestion() {
-//     startPage.style.display = "none";
-//     quizPage.style.display = "none";
-//     scorePage.style.display = "none";
-//     firstQuestion.style.display = "none";
-//     secondQuestion.style.display = "none";
-//     thirdQuestion.style.display = "none";
-//     fourthQuestion.style.display = null;
-// }
-
 
 function showScore() {
     startPage.style.display = "none";
