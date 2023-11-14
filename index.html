@@ -30,26 +30,37 @@
             <!-- added "correct" class to correct answers -->
             <!-- added "submit" class to submit button -->
             <!-- changed button classes to ids -->
+            <!-- added div id="question" to each question
+            added data-correct="correct" to the correct answers
+            added class="answer" to each correct answer button -->
+            <div id="question-one">
             <p>What does API stand for?</p>
-                <button>A. Application Persistence Index</button>
-                <button>B. Appliance Prediction Interface</button>
-                <button id="correct">C. Application Programming Interface</button>
-                <button>D. Appropriate Peanut Inclusion</button>
+                <button class="answer">A. Application Persistence Index</button>
+                <button class="answer">B. Appliance Prediction Interface</button>
+                <button data-correct="correct" class="answer">C. Application Programming Interface</button>
+                <button class="answer">D. Appropriate Peanut Inclusion</button>
+            </div>
+            <div id="question-two">
             <p>Web APIs are typically used with what programming language?</p>   
-                <button id="correct">A. JavaScript</button>
-                <button>B. C#</button>
-                <button>C. Arduino</button>
-                <button>D. Rust</button>
+                <button data-correct="correct" class="answer">A. JavaScript</button>
+                <button class="answer">B. C#</button>
+                <button class="answer">C. Arduino</button>
+                <button class="answer">D. Rust</button>
+            </div>
+                <div id="question-three">
             <p>Web APIs can be programmed to function on both client and server-side? True or false?</p>    
-                <button id="correct">A. True</button>
-                <button>B. False</button>
+                <button data-correct="correct" class="answer">A. True</button>
+                <button class="answer">B. False</button>
+            </div>
+                <div id="question-four">
             <p>Which of the following is a type of web API?</p>
-                <button>A. Open API</button>
-                <button>B. Partner API</button>
-                <button>C. Internal API</button>
-                <button>D. Composite API</button>
-                <button id="correct">E. All of the above</button>
-        </header>
+                <button class="answer">A. Open API</button>
+                <button class="answer">B. Partner API</button>
+                <button class="answer">C. Internal API</button>
+                <button class="answer">D. Composite API</button>
+                <button data-correct="correct" class="answer">E. All of the above</button>
+            </div>        
+            </header>
         </section>
         <!-- changed section class to score -->
         <section class="score">
