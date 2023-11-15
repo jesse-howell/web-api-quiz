@@ -14,7 +14,6 @@ var secondQuestion = document.querySelector("#question-two");
 var thirdQuestion = document.querySelector("#question-three");
 var fourthQuestion = document.querySelector("#question-four")
 var startButton = document.querySelector("#start_btn");
-// var answerButton = document.querySelector("#correct");
 var submitButton = document.querySelector("#submit");
 
 // if statements
@@ -66,15 +65,9 @@ function showScore() {
 }
 // added startButton eventlistener
 // added answer and submit EventListeners
-startButton.addEventListener("click" , showQuiz); 
+startButton.addEventListener("click", showQuiz); 
 
-submitButton.addEventListener("click" , showScore);
-
-function pagePropagation(event) {
-    event.target.matches("#correct")
-    console.log("MATCH", correct);
-}
-
+submitButton.addEventListener("click", showScore);
 
 function init() {
 showStart();
