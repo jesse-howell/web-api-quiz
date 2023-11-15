@@ -11,3 +11,7 @@ button {
 #timer {
     text-align: left;
 }
+
+#score {
+    text-align: right;
+}
