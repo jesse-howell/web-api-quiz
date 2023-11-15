@@ -7,3 +7,7 @@ button {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+/* text-align: left timer */
+#timer {
+    text-align: left;
+}

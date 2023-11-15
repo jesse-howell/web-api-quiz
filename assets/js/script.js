@@ -6,6 +6,7 @@
 // removed quizButton var, added answerButton and submitButton vars
 // added question vars
 // changed question var querySelectors to #question
+// added timerEl and timeLeft vars
 var startPage = document.querySelector('.start');
 var quizPage = document.querySelector('.quiz');
 var scorePage = document.querySelector('.score');
@@ -15,6 +16,9 @@ var thirdQuestion = document.querySelector("#question-three");
 var fourthQuestion = document.querySelector("#question-four")
 var startButton = document.querySelector("#start_btn");
 var submitButton = document.querySelector("#submit");
+var timerEl = document.getElementById("timer");
+var timeLeft = 60;
+
 
 // if statements
 // added functions
@@ -25,6 +29,30 @@ function showStart() {
     scorePage.style.display = "none";
 
 }
+// added functions for timer
+function formatTime(time) {
+    var minutes = Math.floor(time / 60);
+    var seconds = time % 60;
+  
+    if (seconds < 10) {
+      seconds = "0" + seconds;
+    }
+  
+    return minutes + ":" + seconds;
+  }
+
+function updateTimer() {
+    timeLeft--;
+    if (timeLeft >= 0) {
+      // Clear the interval and display a message
+      timerEl.innerHTML = formatTime(timeLeft);
+    } else {
+      clearInterval(timerInterval);
+      timerEl.innerHTML = "Time's up!";
+    }
+  }
+  var timerInterval = setInterval(updateTimer, 1000);
+
 // removed showQuestion functions
 // added quizPage event listener, var answer event.target and if else statements for the questions
 function showQuiz() {
@@ -66,7 +94,6 @@ function showScore() {
 // added startButton eventlistener
 // added answer and submit EventListeners
 startButton.addEventListener("click", showQuiz); 
-
 submitButton.addEventListener("click", showScore);
 
 function init() {
