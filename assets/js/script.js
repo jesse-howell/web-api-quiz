@@ -18,9 +18,7 @@ var startButton = document.querySelector("#start_btn");
 var submitButton = document.querySelector("#submit");
 var timerEl = document.getElementById("timer");
 var timeLeft = 60;
-var score = localStorage.getItem("score");
-var scoreCard = document.getElementById("score");
-
+var score = 0;
 
 // if statements
 // added functions
@@ -31,6 +29,8 @@ function showStart() {
     scorePage.style.display = "none";
 
 }
+
+
 // added functions for timer
 function formatTime(time) {
     var minutes = Math.floor(time / 60);
@@ -55,20 +55,6 @@ function updateTimer() {
   }
   var timerInterval = setInterval(updateTimer, 1000);
 
-  if (!score) {
-    score = 0;
-    scoreDisplay.textContent = score;
-  }
-
-  function incrementScore() {
-    score++;
-    localStorage.setItem("score", score);
-    if (score <= 100) {
-        console.log(score);
-        incrementScore();
-    }
-  }
-  incrementScore();
 // removed showQuestion functions
 // added quizPage event listener, var answer event.target and if else statements for the questions
 function showQuiz() {

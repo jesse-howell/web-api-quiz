@@ -863,7 +863,7 @@ button,
 [type=submit] {
   -webkit-appearance: button;
 }
-/* changed button width to 45% */
+/* */
 button {
   display: block;
   width: 45%;
